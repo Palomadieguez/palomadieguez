@@ -1,14 +1,70 @@
-<style>
-    body {
-      background-color: #f81c74;
-      color: #000000;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    h1 {
-      color: #f58fc2;
-    }
-    p {
-      font-size: 16px;
-    }
-  </style>
+body {
+  background-color: #f81c74;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #f58fc2;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* ===== SECCIÓN CALCULADORA ===== */
+#calculadora {
+  background: #fff;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+input, select, button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #f58fc2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c7135d;
+}
+
+/* ===== RESULTADO Y HISTORIAL ===== */
+#resultado {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#historial {
+  margin-top: 40px;
+}
+
+#listaHistorial {
+  list-style: none;
+  padding: 0;
+}
+
+#listaHistorial li {
+  background: white;
+  margin: 5px auto;
+  padding: 10px;
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  color: #000;
+}
