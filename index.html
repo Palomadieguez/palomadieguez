@@ -3,14 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculadora </title>
+  <title>Calculadora Interactiva</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Calculadora </h1>
-  <p>
-    Este simulador es una calculadora simple que realiza operaciones matemáticas básicas.
-  </p>
+  <h1>Calculadora Interactiva</h1>
+  <p>Este simulador es una calculadora simple que realiza operaciones matemáticas básicas.</p>
+
+  <section id="calculadora">
+    <input type="number" id="num1" placeholder="Primer número" required>
+    
+    <select id="operacion">
+      <option value="sumar">Sumar</option>
+      <option value="restar">Restar</option>
+      <option value="multiplicar">Multiplicar</option>
+      <option value="dividir">Dividir</option>
+    </select>
+
+    <input type="number" id="num2" placeholder="Segundo número" required>
+    
+    <button id="btnCalcular">Calcular</button>
+
+    <div id="resultado"></div>
+  </section>
+
+  <section id="historial">
+    <h2>Historial de operaciones</h2>
+    <ul id="listaHistorial"></ul>
+    <button id="btnLimpiar">Limpiar historial</button>
+  </section>
+
+  <footer>
+    <p>Entrega N°2 - Simulador JS + DOM + Eventos + LocalStorage - Dieguez</p>
+  </footer>
 
   <script src="js/calculadora.js"></script>
 </body>
 </html>
+
